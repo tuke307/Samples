@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.WPF.View1", "MvvmCross.WPF\MvvmCross.WPF.View1.csproj", "{365EF5CC-4073-46B3-9ECC-5909708A2696}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.WPF.View1", "MvvmCross.WPF.View1\MvvmCross.WPF.View1.csproj", "{365EF5CC-4073-46B3-9ECC-5909708A2696}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.WPF.View2", "MvvmCross.WPF.View2\MvvmCross.WPF.View2.csproj", "{9BBE7B8D-AB48-46BD-911F-94B6240ABD4C}"
 EndProject
