@@ -5,8 +5,8 @@
                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                    xmlns:region="clr-namespace:MvvmCross.WPF.View2.Region"
-                   xmlns:local="clr-namespace:MvvmCross.WPF.View2"
-                   x:TypeArguments="local:ViewModels.NestedViewModel"
+                   x:TypeArguments="vm:NestedViewModel"
+                   xmlns:vm="clr-namespace:MvvmCross.WPF.View2.ViewModels"
                    mc:Ignorable="d"
                    d:DesignHeight="450"
                    d:DesignWidth="800">

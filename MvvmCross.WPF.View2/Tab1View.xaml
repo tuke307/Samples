@@ -6,6 +6,8 @@
                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                    xmlns:region="clr-namespace:MvvmCross.WPF.View2.Region"
                    xmlns:local="clr-namespace:MvvmCross.WPF.View2"
+                   xmlns:vm="clr-namespace:MvvmCross.WPF.View2.ViewModels"
+                   x:TypeArguments="vm:Tab1ViewModel"
                    mc:Ignorable="d"
                    region:MvxContainer.Header="Tab1"
                    d:DesignHeight="450"

@@ -1,4 +1,5 @@
-﻿using MvvmCross.Platforms.Wpf.Views;
+﻿using MvvmCross.Platforms.Wpf.Presenters.Attributes;
+using MvvmCross.Platforms.Wpf.Views;
 
 namespace MvvmCross.WPF.View1
 {

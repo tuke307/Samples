@@ -7,7 +7,7 @@ namespace MvvmCross.WPF.View2
     /// Interaction logic for Tab2View.xaml
     /// </summary>
     [MvxWpfPresenter("TabRegion", mvxViewPosition.NewOrExsist)]
-    public partial class Tab2View : MvxWpfView
+    public partial class Tab2View : MvxWpfView<ViewModels.Tab2ViewModel>
     {
         public Tab2View()
         {
