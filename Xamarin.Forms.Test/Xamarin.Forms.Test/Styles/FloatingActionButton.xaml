@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:FAB="clr-namespace:Refractored.FabControl;assembly=Refractored.FabControl"
+                    x:Class="Xamarin.Forms.Test.Styles.FloatingActionButton">
+    <Color x:Key="FAB_BlueNormalStyleColor">
+        #0BA1D8
+    </Color>
+
+    <Color x:Key="FAB_BlueRippleStyleColor">
+        #21B7ED
+    </Color>
+
+    <Color x:Key="FAB_BluePressedStyleColor">
+        #3DCBFF
+    </Color>
+
+    <Color x:Key="FAB_RedNormalStyleColor">
+        #CF0000
+    </Color>
+
+    <Color x:Key="FAB_RedRippleStyleColor">
+        #ED2121
+    </Color>
+
+    <Color x:Key="FAB_RedPressedStyleColor">
+        #FF3D3D
+    </Color>
+
+    <Color x:Key="FAB_OrangeNormalStyleColor">
+        #FFA500
+    </Color>
+
+    <Color x:Key="FAB_OrangeRippleStyleColor">
+        #EDA621
+    </Color>
+
+    <Color x:Key="FAB_OrangePressedStyleColor">
+        #FFBB3D
+    </Color>
+
+    <Color x:Key="FAB_GreenNormalStyleColor">
+        #00E500
+    </Color>
+
+    <Color x:Key="FAB_GreenRippleStyleColor">
+        #69FA69
+    </Color>
+
+    <Color x:Key="FAB_GreenPressedStyleColor">
+        #85FF85
+    </Color>
+
+    <!--Blue-->
+    <Style x:Key="FAB_BlueRegularStyle"
+           TargetType="{x:Type FAB:FloatingActionButtonView}">
+
+        <!--<Setter Property="ImageName"
+                Value="ic_add_white.png" />-->
+
+        <Setter Property="ColorNormal"
+                Value="{StaticResource FAB_BlueNormalStyleColor}" />
+
+        <Setter Property="ColorRipple"
+                Value="{StaticResource FAB_BlueRippleStyleColor}" />
+
+        <Setter Property="ColorPressed"
+                Value="{StaticResource FAB_BluePressedStyleColor}" />
+
+        <Setter Property="HasShadow"
+                Value="True" />
+
+        <Setter Property="IsVisible"
+                Value="True" />
+    </Style>
+
+    <Style x:Key="FAB_BlueMiniStyle"
+           TargetType="{x:Type FAB:FloatingActionButtonView}"
+           BasedOn="{StaticResource FAB_BlueRegularStyle}">
+        <Setter Property="Size"
+                Value="Mini" />
+    </Style>
+
+    <!--Red-->
+    <Style x:Key="FAB_RedRegularStyle"
+           TargetType="{x:Type FAB:FloatingActionButtonView}"
+           BasedOn="{StaticResource FAB_BlueRegularStyle}">
+        <Setter Property="ColorNormal"
+                Value="{StaticResource FAB_RedNormalStyleColor}" />
+
+        <Setter Property="ColorRipple"
+                Value="{StaticResource FAB_RedRippleStyleColor}" />
+
+        <Setter Property="ColorPressed"
+                Value="{StaticResource FAB_RedPressedStyleColor}" />
+    </Style>
+
+    <Style x:Key="FAB_RedMiniStyle"
+           TargetType="{x:Type FAB:FloatingActionButtonView}"
+           BasedOn="{StaticResource FAB_RedRegularStyle}">
+        <Setter Property="Size"
+                Value="Mini" />
+    </Style>
+
+    <!--Orange-->
+    <Style x:Key="FAB_OrangeRegularStyle"
+           TargetType="{x:Type FAB:FloatingActionButtonView}"
+           BasedOn="{StaticResource FAB_BlueRegularStyle}">
+        <Setter Property="ColorNormal"
+                Value="{StaticResource FAB_OrangeNormalStyleColor}" />
+
+        <Setter Property="ColorRipple"
+                Value="{StaticResource FAB_OrangeRippleStyleColor}" />
+
+        <Setter Property="ColorPressed"
+                Value="{StaticResource FAB_OrangePressedStyleColor}" />
+    </Style>
+
+    <Style x:Key="FAB_OrangeMiniStyle"
+           TargetType="{x:Type FAB:FloatingActionButtonView}"
+           BasedOn="{StaticResource FAB_OrangeRegularStyle}">
+        <Setter Property="Size"
+                Value="Mini" />
+    </Style>
+
+    <!--Green-->
+    <Style x:Key="FAB_GreenRegularStyle"
+           TargetType="{x:Type FAB:FloatingActionButtonView}"
+           BasedOn="{StaticResource FAB_BlueRegularStyle}">
+        <Setter Property="ColorNormal"
+                Value="{StaticResource FAB_GreenNormalStyleColor}" />
+
+        <Setter Property="ColorRipple"
+                Value="{StaticResource FAB_GreenRippleStyleColor}" />
+
+        <Setter Property="ColorPressed"
+                Value="{StaticResource FAB_GreenPressedStyleColor}" />
+    </Style>
+
+    <Style x:Key="FAB_GreenMiniStyle"
+           TargetType="{x:Type FAB:FloatingActionButtonView}"
+           BasedOn="{StaticResource FAB_GreenRegularStyle}">
+        <Setter Property="Size"
+                Value="Mini" />
+    </Style>
+</ResourceDictionary>
