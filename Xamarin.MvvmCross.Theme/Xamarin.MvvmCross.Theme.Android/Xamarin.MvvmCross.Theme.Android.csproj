@@ -1,104 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Build.Download.0.4.9\build\Xamarin.Build.Download.props" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.9\build\Xamarin.Build.Download.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BAE52320-A1CD-413E-855E-6B21EDC42048}</ProjectGuid>
+    <ProjectGuid>{64E222FC-84BC-4B02-A4FF-9A58A9A1E73F}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Xamarin.Forms.Test.Droid</RootNamespace>
-    <AssemblyName>Xamarin.Forms.Test.Android</AssemblyName>
-    <Deterministic>True</Deterministic>
+    <RootNamespace>Xamarin.MvvmCross.Theme.Droid</RootNamespace>
+    <AssemblyName>Xamarin.MvvmCross.Theme.Android</AssemblyName>
+     <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
-    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
-    <AndroidUseAapt2>true</AndroidUseAapt2>
-    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
-    <DebugType>portable</DebugType>
+    <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <AndroidTlsProvider>btls</AndroidTlsProvider>
     <AotAssemblies>false</AotAssemblies>
     <EnableLLVM>false</EnableLLVM>
-    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
     <BundleAssemblies>false</BundleAssemblies>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
     <AndroidLinkTool>r8</AndroidLinkTool>
-    <AndroidSupportedAbis />
-    <AndroidHttpClientHandlerType />
-    <MandroidI18n />
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
-    <DebugType>portable</DebugType>
+    <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
-    <AotAssemblies>false</AotAssemblies>
-    <EnableLLVM>false</EnableLLVM>
-    <AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
-    <BundleAssemblies>false</BundleAssemblies>
-    <AndroidPackageFormat>aab</AndroidPackageFormat>
-    <AndroidUseAapt2>true</AndroidUseAapt2>
-    <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
-    <AndroidLinkTool>r8</AndroidLinkTool>
-    <AndroidLinkSkip>Xamarin.Forms.Platform.Android;Xamarin.Forms.Platform;Xamarin.Forms.Core;Xamarin.Forms.Xaml;FormsViewGroup;Shiny.Core;MediaManager;MediaManager.Forms;ExoPlayer;ExoPlayer.Core;ExoPlayer.Hls;ExoPlayer.UI;ExoPlayer.Dash;ExoPlayer.Ext.MediaSession;ExoPlayer.SmoothStreaming;</AndroidLinkSkip>
-    <AndroidSupportedAbis />
-    <AndroidHttpClientHandlerType />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Mono.Android" />
     <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
-    <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1821" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.6.0" />
-    <PackageReference Include="Xamarin.Android.Support.Compat">
-      <Version>28.0.0.3</Version>
+    <PackageReference Include="MvvmCross">
+      <Version>7.1.2</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Android.Support.Core.UI">
-      <Version>28.0.0.3</Version>
+    <PackageReference Include="Xamarin.AndroidX.PercentLayout" Version="1.0.0.7" />
+    <PackageReference Include="Xamarin.Android.Arch.Core.Common" Version="1.1.1.3" />
+    <PackageReference Include="Xamarin.Android.Arch.Lifecycle.Common" Version="1.1.1.3" />
+    <PackageReference Include="Xamarin.Android.Arch.Lifecycle.Runtime" Version="1.1.1.3" />
+	 <PackageReference Include="MvvmCross.DroidX.RecyclerView">
+      <Version>7.1.2</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Android.Support.Core.Utils">
-      <Version>28.0.0.3</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Android.Support.Media.Compat">
-      <Version>28.0.0.3</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat">
-      <Version>28.0.0.3</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.AndroidX.MediaRouter">
-      <Version>1.2.0.1</Version>
+    <PackageReference Include="MvvmCross.DroidX.SwipeRefreshLayout">
+      <Version>7.1.2</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="SplashScreen.cs" />
+    <Compile Include="ThemeService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -127,15 +107,15 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Xamarin.Forms.Test\Xamarin.Forms.Test.csproj">
-      <Project>{22F9093C-EE83-4316-9CD7-1E04E3335A2D}</Project>
-      <Name>Xamarin.Forms.Test</Name>
+    <ProjectReference Include="..\Xamarin.MvvmCross.Theme\Xamarin.MvvmCross.Theme.csproj">
+      <Project>{BA061317-778A-40C0-B082-94A52043F1E2}</Project>
+      <Name>Xamarin.MvvmCross.Theme</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SplashScreen.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
-  <ProjectExtensions>
-    <VisualStudio>
-      <UserProperties TriggeredFromHotReload="False" />
-    </VisualStudio>
-  </ProjectExtensions>
 </Project>
