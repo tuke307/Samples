@@ -66,7 +66,7 @@
     <PackageReference Include="Xamarin.Android.Arch.Lifecycle.Common" Version="1.1.1.3" />
     <PackageReference Include="Xamarin.Android.Arch.Lifecycle.Runtime" Version="1.1.1.3" />
 	 <PackageReference Include="MvvmCross.DroidX.RecyclerView">
-      <Version>7.1.2</Version>
+      <Version>8.0.1</Version>
     </PackageReference>
     <PackageReference Include="MvvmCross.DroidX.SwipeRefreshLayout">
       <Version>7.1.2</Version>
