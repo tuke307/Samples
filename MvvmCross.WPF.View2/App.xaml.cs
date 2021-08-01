@@ -1,5 +1,6 @@
 ﻿using MvvmCross.Core;
 using MvvmCross.Platforms.Wpf.Views;
+using Mvx.Wpf.ItemsPresenter;
 
 namespace MvvmCross.WPF.View2
 {

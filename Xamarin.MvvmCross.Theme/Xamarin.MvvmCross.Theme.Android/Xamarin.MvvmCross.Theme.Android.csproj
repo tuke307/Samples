@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Xamarin.MvvmCross.Theme.Droid</RootNamespace>
     <AssemblyName>Xamarin.MvvmCross.Theme.Android</AssemblyName>
-     <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -59,17 +59,17 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MvvmCross">
-      <Version>7.1.2</Version>
+      <Version>8.0.2</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.AndroidX.PercentLayout" Version="1.0.0.8" />
+    <PackageReference Include="Xamarin.AndroidX.PercentLayout" Version="1.0.0.9" />
     <PackageReference Include="Xamarin.Android.Arch.Core.Common" Version="1.1.1.3" />
     <PackageReference Include="Xamarin.Android.Arch.Lifecycle.Common" Version="1.1.1.3" />
     <PackageReference Include="Xamarin.Android.Arch.Lifecycle.Runtime" Version="1.1.1.3" />
-	 <PackageReference Include="MvvmCross.DroidX.RecyclerView">
-      <Version>7.1.2</Version>
+    <PackageReference Include="MvvmCross.DroidX.RecyclerView">
+      <Version>8.0.2</Version>
     </PackageReference>
     <PackageReference Include="MvvmCross.DroidX.SwipeRefreshLayout">
-      <Version>7.1.2</Version>
+      <Version>8.0.2</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

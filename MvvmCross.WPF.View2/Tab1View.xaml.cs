@@ -1,5 +1,5 @@
 ﻿using MvvmCross.Platforms.Wpf.Views;
-using MvvmCross.WPF.View2.Region;
+using Mvx.Wpf.ItemsPresenter;
 
 namespace MvvmCross.WPF.View2
 {

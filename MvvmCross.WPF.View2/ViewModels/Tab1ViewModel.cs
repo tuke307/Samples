@@ -1,4 +1,5 @@
-﻿using MvvmCross.Commands;
+﻿using Microsoft.Extensions.Logging;
+using MvvmCross.Commands;
 using MvvmCross.Logging;
 using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
@@ -6,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace MvvmCross.WPF.View2.ViewModels
 {
-    public class Tab1ViewModel : MvxNavigationViewModel
+    public class Tab1ViewModel : MvxViewModel
     {
         private readonly IMvxNavigationService _navigationService;
 
-        public Tab1ViewModel(IMvxLogProvider logProvider, IMvxNavigationService navigationService)
-              : base(logProvider, navigationService)
+        public Tab1ViewModel(IMvxNavigationService navigationService)
         {
             this._navigationService = navigationService;
         }

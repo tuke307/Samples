@@ -5,7 +5,7 @@
                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                   xmlns:local="clr-namespace:MvvmCross.WPF.View2"
-                  xmlns:region="clr-namespace:MvvmCross.WPF.View2.Region"
+                  xmlns:region="clr-namespace:Mvx.Wpf.ItemsPresenter;assembly=Mvx.Wpf.ItemsPresenter"
                   mc:Ignorable="d"
                   Title="MainWindow"
                   Height="450"

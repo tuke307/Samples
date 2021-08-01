@@ -6,11 +6,9 @@
              xmlns:local="clr-namespace:MvvmCross.WPF.View1"
              xmlns:vm="clr-namespace:MvvmCross.WPF.View1.ViewModels"
              mc:Ignorable="d"
+             DataContext="{Binding vm:NestedViewModel}"
              d:DesignHeight="450"
              d:DesignWidth="800">
-    <UserControl.DataContext>
-        <vm:NestedViewModel />
-    </UserControl.DataContext>
     <UserControl.Content>
         <StackPanel>
             <Label Content="View Content" />

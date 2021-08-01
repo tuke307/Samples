@@ -1,0 +1,7 @@
+2021-08-01 18:09:04.487 +02:00 [INF] Loaded 5 extensions
+2021-08-01 18:09:05.848 +02:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.302\
+2021-08-01 18:09:06.520 +02:00 [INF] Found Visual Studio v16.10.31515.178 [C:\Program Files (x86)\Microsoft Visual Studio\2019\Community]
+2021-08-01 18:09:08.904 +02:00 [INF] Initializing upgrade step Select an entrypoint
+2021-08-01 18:09:08.906 +02:00 [INF] Setting entrypoint to only project in solution: C:\Users\Tony\source\repos\tuke307\Samples\MvvmCross.WPF.View1\MvvmCross.WPF.View1.csproj
+2021-08-01 18:09:08.914 +02:00 [INF] Initializing upgrade step Select project to upgrade
+2021-08-01 18:09:09.215 +02:00 [INF] Initializing upgrade step Back up project
